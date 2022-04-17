@@ -4,7 +4,7 @@ export const SideNavMenu = ({ items }) => {
       {items.map((menuItem, index) => {
         return (
           <>
-            <h3 className="text-xs text-[rgb(187,186,186)]">
+            <h3 className="text-sm text-[rgb(187,186,186)]">
               {menuItem.label}
             </h3>
             <ul className="list-none p-1">

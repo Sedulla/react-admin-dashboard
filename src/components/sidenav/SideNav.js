@@ -1,5 +1,5 @@
 import { SideNavMenu } from './SideNavMenu';
-import { navigation } from '../utils/navigation';
+import { navigation } from '../../utils/navigation';
 
 export const Side = () => {
   return (

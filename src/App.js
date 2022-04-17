@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { Side } from './components/SideNav';
+import { Side } from './components//sidenav/SideNav';
 import { Homepage } from './views/Homepage';
 
 export const App = () => {
