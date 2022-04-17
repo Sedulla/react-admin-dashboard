@@ -5,6 +5,10 @@ module.exports = {
       zIndex: {
         999: 999,
       },
+      flex: {
+        1: 1,
+        4: 4,
+      },
     },
   },
   plugins: [],

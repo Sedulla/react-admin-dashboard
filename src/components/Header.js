@@ -4,7 +4,7 @@ import {
   MdSettings as SettingsIcon,
 } from 'react-icons/md';
 
-export const Nav = () => {
+export const Header = () => {
   return (
     <>
       <div className="sticky top-0 z-[999] h-11 w-full bg-white">
