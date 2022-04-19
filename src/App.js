@@ -1,4 +1,4 @@
-import { Header } from './components/Header';
+import { Header } from './components/header/Header';
 import { Side } from './components//sidenav/SideNav';
 import { Homepage } from './views/Homepage';
 

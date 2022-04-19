@@ -7,7 +7,11 @@ module.exports = {
       },
       flex: {
         1: 1,
+        2: 2,
         4: 4,
+      },
+      boxShadow: {
+        lg: '0px 0px 15px -9px rgba(0,0,0,0.75)',
       },
     },
   },
