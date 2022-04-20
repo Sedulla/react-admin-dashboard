@@ -56,15 +56,15 @@ export const UserList = () => {
         return (
           <>
             <Link to={'/user/' + params.row.id}>
-              <button
-                className="mr-5 cursor-pointer rounded-sm border-none bg-[#3bb077] py-1 px-3 text-white"
-                onClick={() => handleRowDelete(params.row.id)}
-              >
+              <button className="mr-5 cursor-pointer rounded-sm border-none bg-[#3bb077] py-1 px-3 text-white">
                 Edit
               </button>
             </Link>
 
-            <DeleteIcon className="cursor-pointer text-[brown]" />
+            <DeleteIcon
+              className="cursor-pointer text-[brown]"
+              onClick={() => handleRowDelete(params.row.id)}
+            />
           </>
         );
       },
