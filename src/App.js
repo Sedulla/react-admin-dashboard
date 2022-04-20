@@ -2,17 +2,19 @@ import { Header } from './components/header/Header';
 import { Side } from './components//sidenav/SideNav';
 import { Homepage } from './views/Homepage';
 import { Routes, Route } from 'react-router-dom';
+import { UserList } from './views/UserList';
 
 export const App = () => {
   return (
     <>
-      <Routes>
-        <Header />
-        <div className="mt-3 flex">
-          <Side />
+      <Header />
+      <div className="mt-3 flex">
+        <Side />
+        <Routes>
           <Route path="/" element={<Homepage />} />
-        </div>
-      </Routes>
+          <Route path="/users" element={<UserList />} />
+        </Routes>
+      </div>
     </>
   );
 };
