@@ -3,6 +3,7 @@ import { Side } from './components//sidenav/SideNav';
 import { Homepage } from './views/Homepage';
 import { Routes, Route } from 'react-router-dom';
 import { UserList } from './views/UserList';
+import { SingleUser } from './views/user/SingleUser';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/user/:userId" element={<SingleUser />} />
         </Routes>
       </div>
     </>
