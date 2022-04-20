@@ -4,6 +4,7 @@ import { Homepage } from './views/Homepage';
 import { Routes, Route } from 'react-router-dom';
 import { UserList } from './views/UserList';
 import { SingleUser } from './views/user/SingleUser';
+import { NewUser } from './views/newUser/NewUser';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/user/:userId" element={<SingleUser />} />
+          <Route path="/user/new" element={<NewUser />} />
         </Routes>
       </div>
     </>

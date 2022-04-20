@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid';
 import { MdDeleteOutline as DeleteIcon } from 'react-icons/md';
 
-import { userRows } from '../utils/userSampleData';
+import { userRows } from '../../utils/userSampleData';
 
 export const UserList = () => {
   const [data, setData] = useState(userRows);

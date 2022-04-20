@@ -31,7 +31,7 @@ export const UserEditForm = () => {
               Email
             </label>
             <input
-              type="mail"
+              type="email"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
               placeholder="sedullaa2001@gmail.com"
             />

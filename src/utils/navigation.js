@@ -13,13 +13,13 @@ import {
 
 export const navigation = [
   {
-    label: 'Dashboard',
+     label: 'Dashboard',
     type: 'label',
     items: [
       {
         title: 'Homepage',
         icon: <LineStyleIcon />,
-        path: '/homepage',
+        path: '/',
       },
       {
         title: 'Analytics',

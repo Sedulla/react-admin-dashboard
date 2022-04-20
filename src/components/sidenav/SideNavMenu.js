@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const SideNavMenu = ({ items }) => {
   return (
     <div className="mb-3">
@@ -8,15 +10,17 @@ export const SideNavMenu = ({ items }) => {
               {menuItem.label}
             </h3>
             <ul className="list-none p-1">
-              {menuItem.items.map((a, index) => {
+              {menuItem.items.map((item, index) => {
                 return (
-                  <li
-                    className="flex cursor-pointer items-center rounded-lg p-1 hover:bg-[rgb(155,155,251)] "
-                    key={index}
-                  >
-                    <span className="mr-1 text-sm">{a.icon}</span>
-                    {a.title}
-                  </li>
+                  <Link className="link" to={`${item.path}`}>
+                    <li
+                      className="flex cursor-pointer items-center rounded-lg p-1 hover:bg-[rgb(155,155,251)] "
+                      key={index}
+                    >
+                      <span className="mr-1 text-sm">{item.icon}</span>
+                      {item.title}
+                    </li>
+                  </Link>
                 );
               })}
             </ul>
