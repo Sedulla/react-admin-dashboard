@@ -17,7 +17,7 @@ export const userData = {
   labels: labels,
   datasets: [
     {
-      label: 'Active User',
+      label: 'Sales',
       data: [55, 59, 73, 77, 55, 57, 50, 71, 59, 79, 77, 59],
       fill: false,
       borderColor: 'rgb(75, 192, 192)',
@@ -99,6 +99,20 @@ export const userRows = [
     transactions: '$1100.00',
   },
 ];
+
+// Products Sample Data
+
+export const productData = {
+  labels: ['January', 'February', 'March'],
+  datasets: [
+    {
+      label: 'Active User',
+      data: [59, 73, 77],
+      fill: false,
+      borderColor: 'rgb(75, 192, 192)',
+    },
+  ],
+};
 
 export const productRows = [
   {
