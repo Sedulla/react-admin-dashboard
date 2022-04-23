@@ -7,6 +7,7 @@ import { SingleUser } from './views/singleUser/SingleUser';
 import { NewUser } from './views/newUser/NewUser';
 import { ProductList } from './views/product/productList/ProductList';
 import { SingleProduct } from './views/product/singleProduct/SingleProduct';
+import { NewProduct } from './views/product/newProduct/NewProduct';
 
 export const App = () => {
   return (
@@ -23,7 +24,7 @@ export const App = () => {
 
           <Route path="/products" element={<ProductList />} />
           <Route path="/product/:productId" element={<SingleProduct />} />
-          <Route path="/product/new" element />
+          <Route path="/product/new" element={<NewProduct />} />
         </Routes>
       </div>
     </>
