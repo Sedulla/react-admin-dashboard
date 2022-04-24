@@ -22,7 +22,7 @@ export const NewProduct = () => {
           <label htmlFor="" className="mb-3 font-bold text-[rgb(151,150,150)]">
             Stock
           </label>
-          <input type="number" className=" p-3" placeholder="3" />
+          <input type="number" className=" p-3" placeholder="count" />
         </div>
         <div className="mt-3 mr-5 flex w-[250px] flex-col">
           <label

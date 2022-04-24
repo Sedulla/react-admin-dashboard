@@ -13,17 +13,17 @@ export const UserEditForm = () => {
             <input
               type="text"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
-              placeholder="Sedulla"
+              placeholder="username"
             />
           </div>
           <div className="mt-[9] flex flex-col">
             <label htmlFor="" className="font-sm mb-1">
-              Birth Date
+             Birhtdate
             </label>
             <input
               type="text"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
-              placeholder="08.07.2001"
+              placeholder="date"
             />
           </div>
           <div className="mt-[9] flex flex-col">
@@ -33,7 +33,7 @@ export const UserEditForm = () => {
             <input
               type="email"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
-              placeholder="sedullaa2001@gmail.com"
+              placeholder="email"
             />
           </div>
           <div className="mt-[9] flex flex-col">
@@ -41,9 +41,9 @@ export const UserEditForm = () => {
               Phone
             </label>
             <input
-              type="number"
+              type="tel"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
-              placeholder="+99455 6163677"
+              placeholder="phone"
             />
           </div>
           <div className="mt-[9] flex flex-col">
@@ -53,7 +53,7 @@ export const UserEditForm = () => {
             <input
               type="text"
               className=" w-[250] border-b-[1px] border-solid border-[gray]"
-              placeholder="Baku, Azerbaijan"
+              placeholder="address"
             />
           </div>
         </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid';
 import { MdDeleteOutline as DeleteIcon } from 'react-icons/md';
 
-import { userRows } from '../../../utils/userSampleData';
+import { userRows } from '../../../utils/data';
 
 export const UserList = () => {
   const [data, setData] = useState(userRows);
@@ -24,7 +24,7 @@ export const UserList = () => {
         return (
           <div className="flex items-center">
             <img
-              src={params.row.avatar}
+              src={params.row.image}
               alt=""
               className="mr-3 h-7 w-7 rounded-lg object-cover"
             />

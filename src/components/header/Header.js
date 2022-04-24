@@ -17,13 +17,13 @@ export const Header = () => {
           <div className="flex items-center">
             <div className="relative mr-3 cursor-pointer">
               <NotificationNoneIcon />
-              <span className="absolute -top-1 right-1 flex h-3 w-3 items-center justify-center rounded-3xl bg-red-700 text-xs text-white ">
+              <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-3xl bg-red-700 text-xs text-white ">
                 3
               </span>
             </div>
             <div className="relative mr-3 cursor-pointer ">
               <LanguageIcon />
-              <span className="absolute -top-1 right-1 flex h-3 w-3 items-center justify-center rounded-3xl bg-red-700 text-xs text-white ">
+              <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-3xl bg-red-700 text-xs text-white ">
                 3
               </span>
             </div>
@@ -31,9 +31,9 @@ export const Header = () => {
               <SettingsIcon />
             </div>
             <img
-              src=""
+              src="https://i.ibb.co/2txcJMg/blank-profile-picture.png"
               alt="img.png"
-              className="h-9 w-9 cursor-pointer rounded-3xl"
+              className="h-7 w-7 cursor-pointer rounded-3xl"
             />
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { MdDeleteOutline as DeleteIcon } from 'react-icons/md';
-import { productRows } from '../../../utils/userSampleData';
+import { productRows } from '../../../utils/data';
 import { Link } from 'react-router-dom';
 
 export const ProductList = () => {
@@ -17,7 +17,7 @@ export const ProductList = () => {
     {
       field: 'product',
       headerName: 'Product',
-      width: 150,
+      width: 190,
       renderCell: (params) => {
         return (
           <div className="flex items-center">
@@ -34,12 +34,12 @@ export const ProductList = () => {
     {
       field: 'stock',
       headerName: 'Stock',
-      width: 170,
+      width: 130,
     },
     {
       field: 'price',
       headerName: 'Price',
-      width: 190,
+      width: 150,
     },
     {
       field: 'status',

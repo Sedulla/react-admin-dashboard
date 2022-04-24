@@ -1,15 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Chart } from '../../../components/chart/Chart';
-import { productData } from '../../../utils/userSampleData';
+import { productData } from '../../../utils/data';
 import { MdPublish as PublishIcon } from 'react-icons/md';
 
 export const SingleProduct = () => {
+  const { productId } = useParams();
+
   return (
     <div className="flex-[5] p-5">
       <div className="flex items-center justify-between">
-        <h1 className="">dada</h1>
+        <h1 className="">Single Product Page</h1>
         <Link to="/product/new" className="link">
-          <button className="w-[79px] cursor-pointer rounded border-none bg-[teal] p-1 text-white"></button>
+          <button className="w-[79px] cursor-pointer rounded border-none bg-[teal] p-1 text-white">
+            Add
+          </button>
         </Link>
       </div>
 
@@ -20,7 +24,7 @@ export const SingleProduct = () => {
         <div className="m-5 flex-[1] p-5 shadow-lg">
           <div className="flex items-center ">
             <img
-              src=""
+              src="https://i.ibb.co/0YNnw1x/samsung-tab-s7.jpg"
               alt=""
               className="mr-[19px] h-[39px] w-[39px] object-cover"
             />
@@ -29,22 +33,22 @@ export const SingleProduct = () => {
           <div className="mt-3">
             <div className="flex w-[150px] justify-between">
               <span className="">Id:</span>
-              <span className="">1</span>
+              <span className="">{productId}</span>
             </div>
             <div className="flex w-[150px] justify-between">
               <span className="">Price:</span>
-              <span className="">$300.00</span>
+              <span className="">$329.99</span>
             </div>
             <div className="flex w-[150px] justify-between">
               <span className="">Sales:</span>
-              <span className="">$111</span>
-            </div>
-            <div className="flex w-[150px] justify-between">
-              <span className="">Active:</span>
-              <span className="">1</span>
+              <span className="">~</span>
             </div>
             <div className="flex w-[150px] justify-between">
               <span className="">Stock:</span>
+              <span className="">Yes</span>
+            </div>
+            <div className="flex w-[150px] justify-between">
+              <span className="">Active:</span>
               <span className="">Yes</span>
             </div>
           </div>
@@ -79,7 +83,7 @@ export const SingleProduct = () => {
           <div className="flex flex-col justify-around">
             <div className="flex items-center">
               <img
-                src=""
+                src="https://i.ibb.co/0YNnw1x/samsung-tab-s7.jpg"
                 alt="img.png"
                 className="height-[99px] mr-5 w-[99px] rounded-[9px] object-cover"
               />

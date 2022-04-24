@@ -8,19 +8,21 @@ export const NewUser = () => {
             Username
           </label>
           <input
+            required
             type="text"
             className="h-5 rounded border-[1px] border-solid border-[gray] p-3"
-            placeholder="Sedulla"
+            placeholder="username"
           />
         </div>
         <div className="mt-3 mr-5 flex w-[390px] flex-col">
           <label htmlFor="" className="mb-3 font-bold text-[rgb(151,150,150)]">
-            Full Name
+            Name and Surname
           </label>
           <input
+            required
             type="text"
             className="h-5 rounded border-[1px] border-solid border-[gray] p-3"
-            placeholder="Sedulla Jafarli"
+            placeholder="name and surname"
           />
         </div>
         <div className="mt-3 mr-5 flex w-[390px] flex-col">
@@ -28,9 +30,10 @@ export const NewUser = () => {
             Email
           </label>
           <input
+            required
             type="email"
             className="h-5 border-[1px] border-solid border-[gray] p-3"
-            placeholder="sedullaa2001@gmail.com"
+            placeholder="email"
           />
         </div>
         <div className="mt-3 mr-5 flex w-[390px] flex-col">
@@ -38,6 +41,7 @@ export const NewUser = () => {
             Password
           </label>
           <input
+            required
             type="password"
             className="h-5 rounded border-[1px] border-solid border-[gray] p-3"
             placeholder="password"
@@ -50,7 +54,7 @@ export const NewUser = () => {
           <input
             type="tel"
             className="h-5 border-[1px] border-solid border-[gray] p-3"
-            placeholder="+99455 6163677"
+            placeholder="phone number (optional)"
           />
         </div>
         <div className="mt-3 mr-5 flex w-[390px] flex-col">
@@ -58,9 +62,10 @@ export const NewUser = () => {
             Address
           </label>
           <input
+            required
             type="text"
             className="h-5 rounded border-[1px] border-solid border-[gray] p-3"
-            placeholder="Baku, Azerbaijan"
+            placeholder="address"
           />
         </div>
         <div className="mt-3 mr-5 flex w-[390px] flex-col">
@@ -70,7 +75,12 @@ export const NewUser = () => {
           >
             Active
           </label>
-          <select name="active" id="active" className="h-[39px] rounded">
+          <select
+            required
+            name="active"
+            id="active"
+            className="h-[39px] rounded"
+          >
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>

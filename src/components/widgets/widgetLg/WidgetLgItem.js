@@ -12,8 +12,8 @@ export const WidgetLgItem = () => {
   return (
     <tr className="">
       <td className="flex h-16 items-center font-bold">
-        <img src="" alt="" className="mr-3 h-9 w-9 rounded-3xl object-cover" />
-        <span className="">Ali Qureshi</span>
+        <img src="https://i.ibb.co/2txcJMg/blank-profile-picture.png" alt="" className="mr-3 h-9 w-9 rounded-3xl object-cover" />
+        <span className="">Anonymous</span>
       </td>
       <td className="font-light">19 April 2022</td>
       <td className="font-light">$11,000</td>
