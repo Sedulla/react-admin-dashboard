@@ -13,7 +13,7 @@ import {
 
 export const navigation = [
   {
-     label: 'Dashboard',
+    label: 'Dashboard',
     type: 'label',
     items: [
       {
